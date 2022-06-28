@@ -1,6 +1,7 @@
-<%= form_with (@image) do |f| %>
- <%= f.label :画像 %><br />
- <%= f.file_field :image, class: "image" %>
- <%= f.submit %>
+<h1>投稿一覧</h1>
+ <% @image.each do |image| %>
+
+  <p>画像</p>
+  <%= image_tag list.image, size: "200x200" %>
 
 <% end %>
