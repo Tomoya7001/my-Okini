@@ -2,6 +2,7 @@
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
+/* global $*/
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
@@ -130,4 +131,6 @@ function winLose(user, js){
   return winLoseStr;
 }
 
-
+$(document).on("turbolinks:load", function () {
+  alert('Hello World')
+});
